@@ -119,11 +119,31 @@ color: white;
 text-decoration: none;
 transition: all 500ms ease;
 }
-.barra-icon ul li .icon-facebook{background: #2e406e;}
-.barra-icon ul li .icon-twitter{background: #339dc5;}
-.barra-icon ul li .icon-instagram{background: #3f68a5;}
-.barra-icon ul li .icon-whatsapp{background: #10aa1d;}
+.bi-facebook {
+    text-align: center;
+    margin-left: 5px;
+    margin-right:5px;
+    color: blue ;
+}
 
+.bi-instagram {
+    text-align: center;
+    margin-left: 5px;
+    margin-right:5px;
+    color: rgb(127, 40, 135) ;
+}
+.bi-whatsapp {
+    text-align: center;
+    margin-left: 5px;
+    margin-right:5px;
+    color: rgb(13, 145, 46) ;
+}
+.bi-twitter {
+    text-align: center;
+    margin-left: 5px;
+    margin-right:5px;
+    color: rgb(37, 79, 186) ;
+}
 .barra-icon ul li a:hover{
     padding: 10px 30px;
 }
@@ -270,7 +290,7 @@ button:hover{
     align-items: center;
     height: auto;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .fotosp img{
     width: 100px;
@@ -280,7 +300,7 @@ button:hover{
     transition: all 2s;
 }
 .fotosp img:hover{
-    border: 3px solid rgb(6, 69, 62);
+    border: 3px solid lightcoral;
     width: 130px;
 }
 /* "grid en index" */
@@ -331,7 +351,7 @@ button:hover{
 }
 .gallery img:hover{
     height: 80%;
-    border: 5px solid rgb(6, 69, 62);
+    border: 5px solid lightcoral;
 }
 /* "nombrar al area"*/
 .imagen1{
