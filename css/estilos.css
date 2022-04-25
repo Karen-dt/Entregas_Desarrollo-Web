@@ -67,6 +67,7 @@ header h1{
 img{
     max-width: 600px;
     margin: auto;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 img:hover{
     border: rgb(41, 184, 160) solid 5px
@@ -79,7 +80,6 @@ li{
 }
 section {
 background-size: cover;
-
 max-width: 1200px;
 align-items: center;
 width: 75%;
@@ -87,6 +87,26 @@ margin: 0 15%;
 }
 .p{
     align-items: center;
+}
+h2{
+    text-align: left;
+    font-size: 2rem;
+    transition: all 2s;  
+    text-align: center;
+}
+h2:hover{
+    font-size: 2.5rem;
+    color: rgb(6, 69, 62);
+}
+h3{
+    text-align: left;
+    font-size: 2rem;
+    transition: all 2s;  
+    text-align: center;
+}
+h3:hover{
+    font-size: 2.5rem;
+    color: rgb(6, 69, 62);
 }
 .historico img{
     width: 600px;
@@ -119,31 +139,10 @@ color: white;
 text-decoration: none;
 transition: all 500ms ease;
 }
-.bi-facebook {
-    text-align: center;
-    margin-left: 5px;
-    margin-right:5px;
-    color: blue ;
-}
-
-.bi-instagram {
-    text-align: center;
-    margin-left: 5px;
-    margin-right:5px;
-    color: rgb(127, 40, 135) ;
-}
-.bi-whatsapp {
-    text-align: center;
-    margin-left: 5px;
-    margin-right:5px;
-    color: rgb(13, 145, 46) ;
-}
-.bi-twitter {
-    text-align: center;
-    margin-left: 5px;
-    margin-right:5px;
-    color: rgb(37, 79, 186) ;
-}
+.barra-icon ul li .icon-facebook{background: #2e406e; border-radius: 0 1rem 0 0;}
+.barra-icon ul li .icon-twitter{background: #339dc5;}
+.barra-icon ul li .icon-instagram{background: #3f68a5;}
+.barra-icon ul li .icon-whatsapp{background: #10aa1d; border-radius: 0 0 1rem 0;}
 .barra-icon ul li a:hover{
     padding: 10px 30px;
 }
@@ -155,7 +154,7 @@ transition: all 500ms ease;
     margin: 15%;
 }
 /* "footer y contenedor" */
-footer h3{
+footer h2{
     margin: 10px;
     padding: auto;
     color: brown;
@@ -426,5 +425,36 @@ button:hover{
         ;
         gap: 5px;
     }
-    
+}
+@media (max-width: 480px){
+       
+    .item   :hover{
+        font-weight: normal;
+    }     
+    .dest{
+         grid-template-areas: 
+        "pic1" 
+        "pic2" 
+        "pic3" 
+        "pic4" 
+        "pic5"
+        "pic6"
+        "pic7" 
+        "pic8"
+        "pic9"
+        "pic10"
+        ;
+        gap: 5px;
+    }
+    .gallery{
+        grid-template-areas: 
+        "gal1"
+        "gal2"
+        "gal3" 
+        "gal4"
+        "gal5" 
+        "gal6"
+        ;
+        gap: 5px;
+    }
 }
